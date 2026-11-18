@@ -1,0 +1,1 @@
+const s={spaceInk:728890,hologram:8369151,blueprint:13623551,hull:15922423,graphite:2764602,signal:16747069,success:7268279,fail:16281969},l={hologram:"#7FB3FF",blueprint:"#CFE0FF",hull:"#F2F4F7",signal:"#FF8A3D",success:"#6EE7B7",fail:"#F87171"};export{l as C,s as P};

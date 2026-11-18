@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:," />
+    <title>ORBIT ROOM device check</title>
+    <script type="module" crossorigin src="./assets/canary-D_lE_nbN.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="./assets/shell-B90m9chU.js">
+    <link rel="stylesheet" crossorigin href="./assets/shell-DIC02jJu.css">
+  </head>
+  <body style="margin: 0; background: #0b1f3a">
+    <div class="orbit-landing" id="orbit-landing">
+      <main>
+        <div class="orbit-orbit" aria-hidden="true"><i></i><b></b><u></u></div>
+        <h1>ORBIT ROOM</h1>
+        <p>Two-minute device check.</p>
+        <small id="orbit-loading">Loading</small>
+        <button class="go" id="orbit-enter" hidden>Start</button>
+        <a class="go" id="orbit-open" target="_blank" rel="noopener" hidden>Open on headset</a>
+        <small id="orbit-note">
+          Sit at your desk. Hands only. Follow the card: pinch each hand, touch a button, point at a disc, then hold
+          your hands up for thirty seconds.
+        </small>
+        <small id="orbit-consent">
+          This session sends frame times, hand and head positions, your headset and browser version, the room's
+          object labels and your results to the ORBIT ROOM team. Each report is labelled with a random session code
+          and is deleted after 30 days.
+        </small>
+        <small id="orbit-report" hidden
+          ><span></span> <a class="plain" download="orbit-room-report.json" href="#" hidden>Save the report</a></small
+        >
+      </main>
+    </div>
+    <div id="scene-container"></div>
+  </body>
+</html>

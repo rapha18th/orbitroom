@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Your room has gravity. A mixed reality game played with your hands at your desk." />
+    <link rel="icon" href="data:," />
+    <title>ORBIT ROOM</title>
+    <script type="module" crossorigin src="./assets/main-Cb-0MDip.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="./assets/shell-B90m9chU.js">
+    <link rel="stylesheet" crossorigin href="./assets/shell-DIC02jJu.css">
+  </head>
+  <body style="margin: 0; background: #0b1f3a">
+    <!-- The landing paints from HTML and CSS alone; the engine loads behind it. -->
+    <div class="orbit-landing" id="orbit-landing">
+      <main>
+        <div class="orbit-orbit" aria-hidden="true"><i></i><b></b><u></u></div>
+        <h1>ORBIT ROOM</h1>
+        <p>Your room has gravity.</p>
+        <small id="orbit-loading">Loading</small>
+        <button class="go" id="orbit-enter" hidden>Start</button>
+        <button class="go alt" id="orbit-rush" hidden>Orbit Rush</button>
+        <a class="go" id="orbit-open" target="_blank" rel="noopener" hidden>Open on headset</a>
+        <small id="orbit-desktop" hidden>No headset? <a class="plain" href="?emulate">Play on this computer</a>, or try
+          <a class="plain" href="?emulate&amp;rush">Orbit Rush</a>.</small>
+        <small id="orbit-note">Sit at a desk or table. Hands only.</small>
+        <section class="orbit-how" aria-label="How to play">
+          <ol>
+            <li><b>1</b><span><strong>Pinch.</strong> Close your fingers on the orange pouch.</span></li>
+            <li><b>2</b><span><strong>Pull.</strong> Draw it back. The dots show your shot.</span></li>
+            <li><b>3</b><span><strong>Let go.</strong> One full loop wins.</span></li>
+          </ol>
+          <small>Orbit Rush: launch craft into orbit. Press Pod and hit a craft to refuel it. Most payload in orbit wins.
+            <a class="plain" href="?coach=1">Replay the tutorial</a> or <a class="plain" href="?emulate&amp;coach=1">replay it on this computer</a>.</small>
+        </section>
+        <small id="orbit-consent" hidden>
+          This session sends frame times, hand and head positions, your headset and browser version, the room's
+          object labels and your results to the ORBIT ROOM team. Each report is labelled with a random session code
+          and is deleted after 30 days.
+        </small>
+        <small id="orbit-report" hidden
+          ><span></span> <a class="plain" download="orbit-room-report.json" href="#" hidden>Save the report</a></small
+        >
+      </main>
+    </div>
+    <div id="scene-container"></div>
+  </body>
+</html>
